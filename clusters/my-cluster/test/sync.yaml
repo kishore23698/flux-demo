@@ -9,3 +9,17 @@ spec:
   ref:
     branch: master
   url: https://github.com/kishore23698/K8-S_basic_yaml_files.git
+
+  ---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: pod-kustomization
+  namespace: flux-system
+spec:
+  interval: 5m0s
+  path: ./kuber_tasks/flux-demo
+  prune: false
+  sourceRef:
+    kind: GitRepository
+    name: pod-creation
