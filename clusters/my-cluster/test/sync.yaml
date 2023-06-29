@@ -8,7 +8,7 @@ spec:
   interval: 3m0s
   ref:
     branch: master
-  url: https://github.com/kishore23698/K8-S_basic_yaml_files.git
+  url: https://github.com/kishore23698/K8-S_basic_yaml_files
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
