@@ -14,7 +14,7 @@ apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
   name: pod-kustomization
-  namespace: flux-system
+  namespace: test
 spec:
   interval: 5m0s
   path: ./kuber_tasks/flux-demo
